@@ -109,7 +109,7 @@
             this.btnAddCart.TabIndex = 6;
             this.btnAddCart.Text = "Add to Cart";
             this.btnAddCart.UseVisualStyleBackColor = true;
-            this.btnAddCart.Click += new System.EventHandler(this.button1_Click);
+            this.btnAddCart.Click += new System.EventHandler(this.btnAddCart_Click);
             // 
             // dgvCart
             // 
@@ -148,6 +148,7 @@
             this.Controls.Add(this.cbAgents);
             this.Name = "OrderForm";
             this.Text = "OrderForm";
+            this.Load += new System.EventHandler(this.OrderForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCart)).EndInit();
             this.ResumeLayout(false);

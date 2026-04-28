@@ -31,6 +31,8 @@
             this.btnItems = new System.Windows.Forms.Button();
             this.btnAgents = new System.Windows.Forms.Button();
             this.btnOrders = new System.Windows.Forms.Button();
+            this.btnReports = new System.Windows.Forms.Button();
+            this.btnPrintScreen = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnItems
@@ -61,12 +63,35 @@
             this.btnOrders.TabIndex = 2;
             this.btnOrders.Text = "Manage Orders";
             this.btnOrders.UseVisualStyleBackColor = true;
+            this.btnOrders.Click += new System.EventHandler(this.btnOrders_Click);
+            // 
+            // btnReports
+            // 
+            this.btnReports.Location = new System.Drawing.Point(324, 334);
+            this.btnReports.Name = "btnReports";
+            this.btnReports.Size = new System.Drawing.Size(220, 38);
+            this.btnReports.TabIndex = 3;
+            this.btnReports.Text = "View Reports and Filters";
+            this.btnReports.UseVisualStyleBackColor = true;
+            this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
+            // 
+            // btnPrintScreen
+            // 
+            this.btnPrintScreen.Location = new System.Drawing.Point(612, 334);
+            this.btnPrintScreen.Name = "btnPrintScreen";
+            this.btnPrintScreen.Size = new System.Drawing.Size(220, 38);
+            this.btnPrintScreen.TabIndex = 4;
+            this.btnPrintScreen.Text = "Print";
+            this.btnPrintScreen.UseVisualStyleBackColor = true;
+            this.btnPrintScreen.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1141, 626);
+            this.Controls.Add(this.btnPrintScreen);
+            this.Controls.Add(this.btnReports);
             this.Controls.Add(this.btnOrders);
             this.Controls.Add(this.btnAgents);
             this.Controls.Add(this.btnItems);
@@ -82,5 +107,7 @@
         private System.Windows.Forms.Button btnItems;
         private System.Windows.Forms.Button btnAgents;
         private System.Windows.Forms.Button btnOrders;
+        private System.Windows.Forms.Button btnReports;
+        private System.Windows.Forms.Button btnPrintScreen;
     }
 }

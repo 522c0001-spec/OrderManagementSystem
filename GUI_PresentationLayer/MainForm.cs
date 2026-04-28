@@ -33,5 +33,23 @@ namespace GUI_PresentationLayer
             AgentForm agentForm = new AgentForm();
             agentForm.ShowDialog();
         }
+
+        private void btnOrders_Click(object sender, EventArgs e)
+        {
+            OrderForm orderForm = new OrderForm();
+            orderForm.ShowDialog();
+        }
+
+        private void btnReports_Click(object sender, EventArgs e)
+        {
+            FilterForm filterForm = new FilterForm();
+            filterForm.ShowDialog();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            PrintForm printForm = new PrintForm();
+            printForm.ShowDialog();
+        }
     }
 }
